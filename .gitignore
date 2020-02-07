@@ -1,3 +1,7 @@
 Makefile
 .vscode/
 *.exe
+CMakeLists.txt
+cmake-build-debug/
+BaekJoon/Greedy/.idea/
+.idea/
