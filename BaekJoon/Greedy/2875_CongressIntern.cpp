@@ -1,31 +1,42 @@
 #include <iostream>
 
+#include <algorithm>
+
 using namespace std;
 
-int main()
+int main(void)
+
 {
-    int n, m, k;
 
-    cin >> n >> m >> k;
+    int N, M, K;
 
-    while (k > 0)
-    {
-        k -= 1;
-        n -= 1;
+    cin >> N >> M >> K;
 
-        k -= 1;
-        n -= 1;
+    // 여자가 적을 때, 남자가 적을 때, 남자와 여자가 같을 때
 
-        k -= 1;
-        m -= 1;
-    }
-
-    int team = 0;
-
-    int n_value = n / 2;
-
-    team = n_value > m ? m : n_value;
-    printf("%d", team);
+    cout << min(min(N / 2, M), (N + M - K) / 3) << "\n";
 
     return 0;
 }
+
+// 방법 2
+// #include<iostream>
+// #include<cstdio>
+// #include<algorithm>
+// using namespace std;
+// int N, M, K, num = 0;
+// int main(void) {
+// 	cin.tie(NULL);
+// 	cout.tie(NULL);
+
+// 	cin >> N >> M >> K;
+// 	while (1) {
+// 		if (K <= (N - 2 + M - 1) && N>=2 && M>=1) {
+// 			N -= 2;
+// 			M -= 1;
+// 			num++;
+// 		}
+// 		else break;
+// 	}
+// 	cout << num;
+// }
