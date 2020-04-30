@@ -6,12 +6,11 @@ int rand(void);
 int main(void)
 {
     int i = 0;
-    //시드값 설정
+    //�õ尪 ����
     srand(58);
 
     for (i = 0; i < 10; i++)
     {
-        //랜덤 숫자 지정
         int random = rand();
 
         printf("%d\n", random % 100);
