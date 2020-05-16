@@ -1,18 +1,18 @@
 #include <stdio.h>
 
-// int main()
-// {
-//     FILE *fp = NULL;
-//     fp = fopen("test.txt", "w");
-//     if (fp != NULL)
-//     {
-//         putc('a', fp);
-//         putc('b', fp);
-//         putc('c', fp);
+int main()
+{
+    FILE *fp = NULL;
+    fp = fopen("test.txt", "w");
+    if (fp != NULL)
+    {
+        putc('a', fp);
+        putc('b', fp);
+        putc('c', fp);
 
-//         fclose(fp);
-//     }
-// }
+        fclose(fp);
+    }
+}
 
 int main()
 {
