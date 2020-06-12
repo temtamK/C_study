@@ -32,7 +32,7 @@ int main()
                 case 'b':
                     a = string(sum, ' ');
                     break;
-                case 33:
+                case 0x21:
                     a = "\n";
                     break;
                 default:
