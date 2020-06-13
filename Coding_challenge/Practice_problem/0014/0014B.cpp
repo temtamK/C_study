@@ -13,26 +13,22 @@ int main()
 
     set<char> A(a.begin(), a.end());
     set<char> B(b.begin(), b.end());
-    set<char> C;
 
     if (A.find(' ') != A.end())
     {
         A.erase(' ');
     }
 
-    if (B.find(' ') != B.end())
+    for (auto bb : B)
     {
-        B.erase(' ');
+        if (A.find(bb) != A.end())
+        {
+            A.erase(bb);
+        }
     }
 
     for (auto aa : A)
     {
+        cout << aa << ' ';
     }
-
-    cout << endl;
-
-    for (auto bb : B)
-    {
-    }
-    cout << endl;
 }
